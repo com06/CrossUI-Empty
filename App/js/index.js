@@ -19,7 +19,27 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label7")
+                .setLeft("1.5238095238095237em")
+                .setTop("1.5238095238095237em")
+                .setWidth("9.295238095238096em")
+                .setHeight("2.742857142857143em")
+                .setCaption("TEXT-DEMO-LEFT")
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label10")
+                .setLeft("52.57142857142857em")
+                .setTop("2.2857142857142856em")
+                .setWidth("9.295238095238096em")
+                .setHeight("2.742857142857143em")
+                .setCaption("TEXT-DEMO-LEFT")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
